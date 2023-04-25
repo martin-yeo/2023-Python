@@ -128,23 +128,22 @@ print(c.title().count('Y'))
 
 #18
 # a_1, a_2, a_3, ...
-def fibo(n=11):
-    if n == 1 or n == 2: return 1
-    else: return fibo(n - 1) + fibo(n - 2)
+def facto(n=5):
+    if n == 1: return 1
+    else: return n * facto(n-1)
 
-def iFibo(n=11):
-    if n == 1 or n == 2: return 1
+def iFacto(n=5):
+    if n == 1 : return 1
     else:
-        fib1 = fib2 = 1
-        fib = 0
-        for i in range(3, n+1):
-            fib = fib1 + fib2
-            fib2 = fib1
-            fib1 = fib
-        return fib
+        An = An_1 = 1
+        for i in range(2, n+1):
+            # An = i * An_1
+            # An_1 = An
+            An *= i
+        return An
 
-print(f'fibo : {fibo()}')
-print(f'iFibo : {iFibo()}')
+print(f'facto : {facto(7)}')
+print(f'iFacto : {iFacto(8)}')
 
 #19
 def sunflowerTower(floor):
