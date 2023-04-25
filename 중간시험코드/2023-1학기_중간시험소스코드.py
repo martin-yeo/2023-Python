@@ -88,14 +88,12 @@ print(f'|{word:*>14}|')
 #     print(f'{itr} x {i} = {itr * i:2}')
 
 # #18
-tString = '''
-Yesterday all my troubles
+tString = '''Yesterday all my troubles
 seemed so far away
 Now it looks as though
 they're here to stay
 Oh, I believe in yesterday
-Suddenly
-I'm not half the man I used to be
+Suddenly I'm not half the man I used to be
 There's a shadow hanging over me
 Oh, yesterday came suddenly
 Why she had to go
@@ -113,8 +111,7 @@ Now I long for yesterday
 Yesterday love was
 such an easy game to play
 Now I need a place to hide away
-Oh, I believe in yesterday
-'''
+Oh, I believe in yesterday'''
 
 print(len('YESTERDAY') )
 print(tString.count('yesterday'))
