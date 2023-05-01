@@ -43,8 +43,7 @@ print(colors)
 
 #13
 listA = ['Mokwon', 'University', 'is', 'an', 'academic',
-				'institute', 'located', 'in',
-        'Daejeon']
+    'institute', 'located', 'in', 'Daejeon']
 listB = []
 for i in range(len(listA)):
     if i % 2 != 1:
