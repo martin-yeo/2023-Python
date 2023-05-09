@@ -54,19 +54,20 @@ print(listB)
 #14
 result = 0
 for i in range(5, -5, -2):
+    print("i:", i)
     if i < -3:
         result += 1
     else: 
         result -= 1
-print(result)
+print("result :", result)
 
 #15
 def calcValue():
     x = 10
-    print("Value:", x)
+    print("Value(calcValue):", x)
 x = 20
 calcValue()
-print("Value:", x)
+print("Value(바깥쪽):", x)
 
 #16
 word = 'cool'
@@ -133,13 +134,11 @@ def iFacto(n=5):
     else:
         An = An_1 = 1
         for i in range(2, n+1):
-            # An = i * An_1
-            # An_1 = An
             An *= i
         return An
 
-print(f'facto : {facto(7)}')
-print(f'iFacto : {iFacto(8)}')
+print(f'facto(8) : {facto(8)}')
+print(f'iFacto(8) : {iFacto(8)}')
 
 #19
 def sunflowerTower(floor):
