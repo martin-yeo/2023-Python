@@ -11,3 +11,13 @@ c =  Counter(text.lower().split())
 
 for word, count in c.most_common():
   print(word, count)
+
+
+from collections import namedtuple
+
+Point = namedtuple('Point', ['x', 'y'])
+p = Point(11, 22)
+print(p)
+print(p[0] + p[1])
+x, y = p
+print(x, y)
