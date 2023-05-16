@@ -62,6 +62,7 @@
 
 #### 데크 (deque)
 # from collections import deque
+<<<<<<< HEAD
 import collections
 
 word = input("문자열을 입력하세요 : ")
@@ -82,3 +83,23 @@ print(d)
 rd = deque(reversed(d))
 print(d)
 print(rd)
+=======
+
+# word = input("문자열을 입력하세요 : ")
+# d = deque(word)
+# print(d)
+# d.rotate(-2)
+# print(d)
+# print(d.pop())
+# print(d.pop())
+# # print(d.pop(0))
+# print(d.popleft())
+# print(d)
+# d.append('카')
+# d.append('타')
+# d.appendleft('하')
+# print(d)
+# rd = deque(reversed(d))
+# print(d)
+# print(rd)
+>>>>>>> 9a0b583d65704967c88eb880950d6e1b69e83346
