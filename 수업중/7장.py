@@ -8,7 +8,7 @@
 
 # result = []
 # for _ in range(len(word_list)):
-#     result.append(word_list.pop(0))
+#     result.append(word_list.pop())
 
 # print(result)
 
@@ -49,8 +49,8 @@
 # country_code['German'] = 49
 # print(country_code)
 
-# for k, v in country_code.items():
-#     print(f'key : {k},  value : {v}')
+# for a, b in country_code.items():
+#     print(f'key : {a},  value : {b}')
 
 # print(country_code.keys())
 # print(country_code.values())
@@ -61,11 +61,13 @@
 #     print('없다')
 
 #### 데크 (deque)
-from collections import deque
+# from collections import deque
+import collections
 
 word = input("문자열을 입력하세요 : ")
-d = deque(word)
-print(d)
+print('문자열 word : ', word)
+d = collections.deque(word)
+print('데크 d : ', d)
 d.rotate(-2)
 print(d)
 print(d.pop())
