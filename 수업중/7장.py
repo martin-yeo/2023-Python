@@ -100,9 +100,28 @@
 # print(d)
 # print(rd)
 
-from collections import Counter
+import collections as cl
+
+# word = input("문자열을 입력하세요 : ")
+# d = cl.deque(word)
+# print(d)
+# d.rotate(-2)
+# print(d)
+# print(d.pop())
+# print(d.pop())
+# # print(d.pop(0))
+# print(d.popleft())
+# print(d)
+# d.append('카')
+# d.append('타')
+# d.appendleft('하')
+# print(d)
+# rd = cl.deque(reversed(d))
+# print(d)
+# print(rd)
+
 
 text = '오늘 오후에는 오전보다 수업을 많이 하지 않습니다.'.split()
 print(text)
-counterText = Counter(text)
+counterText = cl.Counter(text)
 print(counterText)
