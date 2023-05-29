@@ -13,28 +13,28 @@ import collections as cl
 # x, y = p
 # print(x, y)
 
-# #############################
-# # OrderedDict
-# #############################
-# nDict = dict()
-# nDict['x'] = 100
-# nDict['l'] = 500
-# nDict['y'] = 200
-# nDict['z'] = 300
-# print(nDict)
+#############################
+# OrderedDict
+#############################
+nDict = dict()
+nDict['x'] = 100
+nDict['l'] = 500
+nDict['y'] = 200
+nDict['z'] = 300
+print("nDict", nDict)
 
-# oDict = cl.OrderedDict();
-# oDict['x'] = 100
-# oDict['y'] = 200
-# oDict['z'] = 300
-# oDict['l'] = 500
-# print(oDict)
+oDict = cl.OrderedDict();
+oDict['x'] = 100
+oDict['y'] = 200
+oDict['z'] = 300
+oDict['l'] = 500
+print("oDict", oDict)
 
-# def sortKey(t):
-#   return t[0]
+def sortKey(t):
+  return t[0]
 
-# oDict2 = cl.OrderedDict(sorted(nDict.items(), key=sortKey))
-# print(oDict2)
+oDict2 = cl.OrderedDict(sorted(nDict.items(), key=lambda t: t[0]))
+print("oDict2",oDict2)
 
 
 #############################
