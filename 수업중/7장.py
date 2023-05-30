@@ -61,11 +61,12 @@
 #     print('없다')
 
 #### 데크 (deque)
+import collections as cl
 # from collections import deque
 
 # word = input("문자열을 입력하세요 : ")
 # print('문자열 word : ', word)
-# d = deque(word)
+# d = cl.deque(word)
 # print('데크 d : ', d)
 # d.rotate(-2)
 # print(d)
@@ -78,7 +79,7 @@
 # d.append('타')
 # d.appendleft('하')
 # print(d)
-# rd = deque(reversed(d))
+# rd = cl.deque(reversed(d))
 # print(d)
 # print(rd)
 
@@ -100,7 +101,6 @@
 # print(d)
 # print(rd)
 
-import collections as cl
 
 # word = input("문자열을 입력하세요 : ")
 # d = cl.deque(word)
@@ -120,8 +120,29 @@ import collections as cl
 # print(d)
 # print(rd)
 
+# text = "가나다라마바사 아자차카타파하 가가가".split()
+# print("text :", text)
+# c = cl.Counter(text)
+# print("c :", c)
+# print('c["a"] :', c["a"])
 
-text = '오늘 오후에는 오전보다 수업을 많이 하지 않습니다.'.split()
+
+# text = '''오늘 오후에는 오늘 오전보다 
+# 수업을 많이 하지 않습니다.
+# 하지만 어제 오후보다는 많이 
+# 하고 있습니다.'''.split()
+text = """A press release is 
+the quickest and easiest 
+way to get free publicity. 
+If well written, a press 
+release can result in multiple 
+published articles about your 
+firm and its products. And that
+can mean new prospects 
+contacting you asking you 
+to sell to 
+them. ....""".replace(".", "").lower().split()
+
 print(text)
 counterText = cl.Counter(text)
 print(counterText)
